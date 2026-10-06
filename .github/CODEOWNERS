@@ -1,0 +1,22 @@
+# Define os responsáveis por cada parte do repositório.
+# A revisão deste arquivo é crítica para manter a governança e rastreabilidade.
+
+* @elton-bt
+
+# Infraestrutura e automações
+.github/ @elton-bt
+Dockerfile* @elton-bt
+docker-compose*.yml @elton-bt
+docker-compose*.yaml @elton-bt
+
+# Aplicação principal
+monolito/ @elton-bt
+internal/ @elton-bt
+
+desacoplado/backend/ @elton-bt
+desacoplado/frontend/ @elton-bt
+
+# Documentação e processo
+README.md @elton-bt
+docs/ @elton-bt
+CONTRIBUTING.md @elton-bt
