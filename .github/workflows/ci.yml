@@ -67,7 +67,7 @@ jobs:
 
       - name: Run Semgrep (SAST OWASP Top 10)
         run: |
-          pip install semgrep --quiet
+          pip install --break-system-packages --quiet semgrep
           semgrep scan \
             --config p/owasp-top-ten \
             --config p/security-audit \
@@ -76,7 +76,7 @@ jobs:
             .
 
       - name: Scan Docker image with Trivy
-        uses: aquasecurity/trivy-action@0.28.0
+        uses: aquasecurity/trivy-action@v0.28.0
         with:
           image-ref: gotodolist:scan
           format: table
