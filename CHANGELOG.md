@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.0.1](https://github.com/Sig-afk/gotodolist/compare/v1.0.0...v1.0.1) (2026-10-06)
+
+
+### Bug Fixes
+
+* **ci:** add v prefix to trivy-action tag and add break-system-packages flag for pip ([cddb657](https://github.com/Sig-afk/gotodolist/commit/cddb657a8ad88d07788e4840a9d605b7dff065ee))
+* **ci:** atualiza dependencias e implementa google release please ([1721335](https://github.com/Sig-afk/gotodolist/commit/172133554828107ec387d3a5c967fa371b7e1d2e))
+* **ci:** replace semgrep action with direct cli to avoid requiring app token ([eb3f754](https://github.com/Sig-afk/gotodolist/commit/eb3f7544373e5e5d6104a588c6a4ebffd7e33a79))
+* **ci:** replace semgrep action with direct cli to avoid requiring app token ([b38da7c](https://github.com/Sig-afk/gotodolist/commit/b38da7cfdf0c5f8752270ebc972edbee4a239f91))
+
 ## 1.0.0 (2026-10-06)
 
 
