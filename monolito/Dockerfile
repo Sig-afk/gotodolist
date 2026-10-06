@@ -19,7 +19,7 @@ RUN CGO_ENABLED=0 GOOS=$TARGETOS GOARCH=$TARGETARCH \
 
 FROM alpine:3.22.4 AS runtime
 
-RUN addgroup -S app && adduser -S app -G app && apk add --no-cache ca-certificates wget
+RUN addgroup -S app && adduser -S app -G app && apk upgrade --no-cache && apk add --no-cache ca-certificates wget
 
 WORKDIR /app
 
