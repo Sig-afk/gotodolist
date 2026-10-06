@@ -65,13 +65,15 @@ jobs:
       - name: Build app image for scan
         run: docker build -f monolito/Dockerfile -t gotodolist:scan .
 
-      - name: Run Semgrep
-        uses: semgrep/semgrep-action@v1
-        with:
-          config: >-
-            p/owasp-top-ten
-            p/security-audit
-          auditOn: push
+      - name: Run Semgrep (SAST OWASP Top 10)
+        run: |
+          pip install semgrep --quiet
+          semgrep scan \
+            --config p/owasp-top-ten \
+            --config p/security-audit \
+            --error \
+            --quiet \
+            .
 
       - name: Scan Docker image with Trivy
         uses: aquasecurity/trivy-action@0.28.0
